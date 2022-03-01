@@ -18,6 +18,7 @@ RUN wget --no-check-certificate -nv "https://abrok.eu/stockfish/builds/590447d7a
 && 7z e chess-engine.zip && rm chess-engine.zip && mv stockfish* chess-engine
 
 RUN chmod +x chess-engine
+RUN chmod +x fsf
 #Engine name ^^^^^^^^^^^^
 
 CMD python3 lichess-bot.py -u
